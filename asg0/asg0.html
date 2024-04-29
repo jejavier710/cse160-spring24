@@ -1,0 +1,53 @@
+<!--Name: Jasmine Javier-->
+<!--Assignment 0-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Assignment 0 - Jasmine Javier</title>
+        
+    </head>
+ 
+    <body onload="main()">
+     <canvas id="asg0" width="400" height="400">
+        Please use a browser that supports "canvas"
+     </canvas>
+     <script src="asg0.js"></script>
+     <script type="text/javascript" src="./lib/cuon-matrix-cse160.js"></script>
+
+    <br></br>
+     <label for="v1">v1 : x</label> <!--Vector 1 Label-->
+        <input type="text" id="xpoint1" name="x1" />
+        <label for="v1">y</label>
+        <input type="text" id="ypoint1" name="y1" />
+    <br></br>
+
+    <label for="v2">v2 : x</label> <!--Vector 2 Label-->
+        <input type="text" id="xpoint2" name="x2" />
+        <label for="v2">y</label>
+        <input type="text" id="ypoint2" name="y2" />
+    <br></br>
+
+    <input type="button" value = "Draw" onclick="handleDrawEvent()"></input> <!--Draw Button-->
+    <br></br>
+    <label for="operator">Operation:</label> <!--Operations-->
+    <select id="operator">
+
+        <option value="Add">Add</option>
+        <option value="Sub">Subtract</option>
+        <option value="Multi">Multiply</option>
+        <option value="Div">Divide</option>
+        <option value="Mag">Magnitude</option>
+        <option value="Norm">Normalize</option>
+        <option value="Angle">Angle Between</option>
+        <option value="Area">Area</option>
+    
+    </select>
+    <label for="scalar">Scalar:</label> <!--Scalar Label-->
+        <input type="text" id="scalar" name="scal" />
+    <br></br>
+    <input type="button" value = "Draw" onclick="handleDrawOperationEvent()"></input> <!--2nd Draw Button-->
+     
+    </body>
+</html> 
